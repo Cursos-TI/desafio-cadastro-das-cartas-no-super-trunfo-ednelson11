@@ -175,6 +175,30 @@ int main() {
     printf("Super Poder: Carta %d venceu (%d)\n", (super_poder > super_poder_2) + 1, (super_poder > super_poder_2));
 
 
+    
+    
+
+    printf("\n COMPARAÇÃO DE CARTA 1 E CARTA2 \n\n");
+    
+
+    printf("Qual a maior densidade populacional entre os dois estado? \n");
+
+     printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional);
+     printf("Densidade populacional 2: %.2f hab/km²\n", densidade_populacional_2);
+    
+    
+    if (densidade_populacional > densidade_populacional_2) {
+      printf("O estado da Carta 1 tem a maior Densidade populacional \n");
+    }
+    else {
+      printf(" O estado da Carta 2 tem a Densidade populacional menor que a da Carta 1 \n");
+    }
+
+
+
+
+
+
 
 
 
