@@ -196,6 +196,107 @@ int main() {
 
 
 
+   
+    int opcao;
+
+    printf("\n=== MENU DE COMPARAÇÃO ===\n");
+    printf("Escolha o atributo para comparar:\n");
+    printf("1. Número de habitantes\n");
+    printf("2. Área em Km²\n");
+    printf("3. PIB\n");
+    printf("4. Número de pontos turísticos\n");
+    printf("5. Densidade populacional (MENOR vence)\n");
+    printf("6. PIB per capita\n");
+    printf("7. Super Poder\n");
+    printf("Digite a opção (1-7): ");
+    scanf("%d", &opcao);
+
+    printf("\nComparação escolhida:\n");
+
+    switch (opcao) {
+        case 1:
+            if (numero_de_habitantes > numero_de_habitantes_2) {
+                printf("Carta 1 venceu em Número de habitantes!\n");
+            } else if (numero_de_habitantes_2 > numero_de_habitantes) {
+                printf("Carta 2 venceu em Número de habitantes!\n");
+            } else {
+                printf("Empate em Número de habitantes!\n");
+            }
+            break;
+        case 2:
+            if (area_em_km2 > area_em_km2_2) {
+                printf("Carta 1 venceu em Área!\n");
+            } else if (area_em_km2_2 > area_em_km2) {
+                printf("Carta 2 venceu em Área!\n");
+            } else {
+                printf("Empate em Área!\n");
+            }
+            break;
+        case 3:
+            if (pib > pib_2) {
+                printf("Carta 1 venceu em PIB!\n");
+            } else if (pib_2 > pib) {
+                printf("Carta 2 venceu em PIB!\n");
+            } else {
+                printf("Empate em PIB!\n");
+            }
+            break;
+        case 4:
+            if (numeros_de_pontos_turisticos > numeros_de_pontos_turisticos_2) {
+                printf("Carta 1 venceu em Pontos turísticos!\n");
+            } else if (numeros_de_pontos_turisticos_2 > numeros_de_pontos_turisticos) {
+                printf("Carta 2 venceu em Pontos turísticos!\n");
+            } else {
+                printf("Empate em Pontos turísticos!\n");
+            }
+            break;
+        case 5:
+            if (densidade_populacional < densidade_populacional_2) {
+                printf("Carta 1 venceu em Densidade populacional (MENOR vence)!\n");
+            } else if (densidade_populacional_2 < densidade_populacional) {
+                printf("Carta 2 venceu em Densidade populacional (MENOR vence)!\n");
+            } else {
+                printf("Empate em Densidade populacional!\n");
+            }
+            break;
+        case 6:
+            if (pib_percapita > pib_percapita_2) {
+                printf("Carta 1 venceu em PIB per capita!\n");
+            } else if (pib_percapita_2 > pib_percapita) {
+                printf("Carta 2 venceu em PIB per capita!\n");
+            } else {
+                printf("Empate em PIB per capita!\n");
+            }
+            break;
+        case 7:
+            if (super_poder > super_poder_2) {
+                printf("Carta 1 venceu em Super Poder!\n");
+            } else if (super_poder_2 > super_poder) {
+                printf("Carta 2 venceu em Super Poder!\n");
+            } else {
+                printf("Empate em Super Poder!\n");
+            }
+            break;
+        default:
+            printf("Opção inválida! Por favor, escolha de 1 a 7.\n");
+            break;
+    }
+
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
